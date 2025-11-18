@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ProRpg - Login</title>
+</head>
+<body class="bg-[#212529] font-[Inria_Sans] text-white flex flex-col items-center">
+    <section>
+        <img src="[img logo]" class="size-[90px]" alt="logo">
+        <h1 class="text-4xl">ProRpg</h1>
+        <hr class="w-[34.81rem]">
+    </section> 
+    <section id="entrarLogin">
+        <form>
+            <!--Campo para buscar o user ou email no banco de dados-->
+            <label for="userLogar">Usuário ou Email:</label><br>
+            <input type="search" id="userLogar" name="userLogar"><br>
+
+            <!--Campo para buscar a senha do user-->
+            <label for="senhaLogar">Senha:</label><br>
+            <input type="password" id="senhaLogar" name="senhaLogar"><br>
+
+            <!--redirecioinamento para o recuperar senha-->
+            <h5>Esqueci a senha</h5>
+
+            <!--btn para confirmar as infos-->
+            <input type="submit" value="Confirmar" id="confLogar" class="min-h-[54.95px] text-xl"><br>
+        </form>
+        <!--Criar conta-->
+        <p class="text-[0.87rem] text-[#C8C8C8]">Não tem uma conta?<span class="text-white font-bold ml-[9px]">Inscreva-se</span></p>
+    </section>
+    <section id="criarLogin">
+    </section>
+    <script src="JS/login.js"></script>
+</body>
+</html>
