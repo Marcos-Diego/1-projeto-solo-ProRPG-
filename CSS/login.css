@@ -1,9 +1,11 @@
 :root {
-    --background-color: #343A40
+    --bg-fundo: #343A40;
+    --light-gray: #C8C8C8;
+    --gray-lines: #495057;
 }
 
 section {
-    background-color: var(--background-color);
+    background-color: var(--bg-fundo);
     max-width: 593px;
     width: 100%;
     display: inline-flex;
@@ -17,7 +19,7 @@ form div {
 
 input {
     border-radius: 5px;
-    background-color: var(--background-color);
+    background-color: var(--bg-fundo);
     width: 427.05px;
     height: 25px;
     border: 1px solid #fff;
@@ -25,4 +27,10 @@ input {
 
 label {
     margin: 0.37rem 0px;
+}
+
+hr {
+    width: 34.81rem;
+    border-top-width: 2px;
+    border-color: var(--gray-lines);
 }

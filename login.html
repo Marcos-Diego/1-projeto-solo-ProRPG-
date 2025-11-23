@@ -19,29 +19,40 @@
         <img src="[img logo]" class="size-[90px]" alt="logo">
         <h1 class="text-4xl mb-[10px]">ProRpg</h1>
         <p class="text-xl mb-[26px]">Transformando Histórias em <strong>MUNDOS!</strong></p>
-        <hr class="w-[34.81rem] mb-[35px]">
+        <hr class="mb-[35px]">
     </section>
+    <!---------------------------
+                Logar
+    ----------------------------->
     <section id="entrarLogin">
         <form>
-            <!--Campo para buscar o user ou email no banco de dados-->
+            <!--user ou email-->
             <div>
                 <label for="userLogar">Usuário ou Email:</label><br>
                 <input type="search" id="userLogar" name="userLogar"><br>
             </div>
             <div>
-                <!--Campo para buscar a senha do user-->
+                <!--senha e recuperar senha-->
                 <label for="senhaLogar">Senha:</label><br>
                 <input type="password" id="senhaLogar" name="senhaLogar" class="mb-[0px]"><br>
-                <!--redirecioinamento para o recuperar senha-->
-                <h5 class="font-bold">Esqueci a senha</h5>
+                <button class="font-bold">Esqueci a senha</button>
             </div>
             <!--btn para confirmar as infos-->
             <input type="submit" value="Confirmar" id="confLogar" class="min-h-[54.95px] text-xl mt-[60px]"><br>
         </form>
-        <!--Criar conta-->
-        <p class="text-sm text-[#C8C8C8] mt-[48px]">Não tem uma conta?<button
-                class="text-white text-bold ml-[9px]">Inscreva-se</button></p>
+            <!--Criar conta-->
+        <p class="text-sm text-(--light-gray) mt-[48px]">Não tem uma conta?
+        <button class="text-white text-bold ml-[9px]">Inscreva-se</button></p>
+            
+        <div class="relative mb-[20px] mt-[19px]"> 
+            <hr>
+            <span class="absolute w-[50px] top-[-12.5px] left-[50%] -translate-x-1/2 bg-(--bg-fundo) text-s text-(--gray-lines) text-center">ou</span>
+        </div>
     </section>
+
+    <!---------------------------
+             Criar conta
+    ----------------------------->
     <section id="criarLogin">
     </section>
     <script src="JS/login.js"></script>
