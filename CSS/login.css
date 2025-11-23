@@ -11,13 +11,16 @@ section {
     align-items: center;
 }
 
+form div {
+    margin-bottom: 22px;
+}
+
 input {
     border-radius: 5px;
     background-color: var(--background-color);
     width: 427.05px;
     height: 25px;
     border: 1px solid #fff;
-    margin-bottom: 22px;
 }
 
 label {
