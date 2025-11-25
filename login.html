@@ -24,26 +24,26 @@
     <!---------------------------
                 Logar
     ----------------------------->
-    <section id="entrarLogin">
+    <section class="hidden">
         <form>
-            <!--user ou email-->
+            <!-- user ou email -->
             <div>
-                <label for="userLogar">Usuário ou Email:</label><br>
-                <input type="search" id="userLogar" name="userLogar"><br>
+                <label for="user">Usuário ou Email:</label><br>
+                <input type="search" id="user" name="user"><br>
             </div>
+            <!-- senha e recuperar senha -->
             <div>
-                <!--senha e recuperar senha-->
                 <label for="senhaLogar">Senha:</label><br>
                 <input type="password" id="senhaLogar" name="senhaLogar" class="mb-[0px]"><br>
                 <button class="font-bold">Esqueci a senha</button>
             </div>
-            <!--btn para confirmar as infos-->
-            <input type="submit" value="Confirmar" id="confLogar" class="min-h-[54.95px] text-xl mt-[60px]"><br>
+            <!-- btn para confirmar as infos -->
+            <input type="submit" value="Confirmar" id="confLogar">
         </form>
-            <!--Criar conta-->
+            <!-- criar conta -->
         <p class="text-sm text-(--light-gray) mt-[48px]">Não tem uma conta?
         <button class="text-white text-bold ml-[9px]">Inscreva-se</button></p>
-            
+            <!-- line-OU -->
         <div class="relative mb-[20px] mt-[19px]"> 
             <hr>
             <span class="absolute w-[50px] top-[-12.5px] left-[50%] -translate-x-1/2 bg-(--bg-fundo) text-s text-(--gray-lines) text-center">ou</span>
@@ -53,7 +53,31 @@
     <!---------------------------
              Criar conta
     ----------------------------->
-    <section id="criarLogin">
+    <section>
+        <form>
+            <!-- Nome de usuario -->
+            <div>
+                <label for="username">Nome de Usúario:</label><br>
+                <input type="text" name="username">
+            </div>
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email">
+            </div>
+            <!-- senha -->
+            <div>
+                <label for="new-password">Senha:</label><br>
+                <input type="password" name="new-password">
+            </div>
+            <!-- confirmar senha -->
+            <div>
+                <label for="conf-new-password">Confirme a senha:</label><br>
+                <input type="password" name="conf-new-password">
+            </div>
+            <!-- btn para cria conta -->
+             <input type="submit" value="Confirmar" id="criaconta">
+        </form>
     </section>
     <script src="JS/login.js"></script>
 </body>

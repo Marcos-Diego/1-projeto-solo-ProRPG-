@@ -25,6 +25,13 @@ input {
     border: 1px solid #fff;
 }
 
+input[type="submit"] {
+/*min-h-[54.95px] text-xl mt-[60px] */
+    min-height: 54.95px;
+    font-size: 1.25rem;
+    margin-top: 60px;
+}
+
 label {
     margin: 0.37rem 0px;
 }
