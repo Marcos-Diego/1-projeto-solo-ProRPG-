@@ -25,28 +25,26 @@
                 Logar
     ----------------------------->
     <section class="hidden">
-        <form>
-            <!-- user ou email -->
-            <div>
-                <label for="user">Usuário ou Email:</label><br>
-                <input type="search" id="user" name="user"><br>
-            </div>
-            <!-- senha e recuperar senha -->
-            <div>
-                <label for="senhaLogar">Senha:</label><br>
-                <input type="password" id="senhaLogar" name="senhaLogar" class="mb-[0px]"><br>
-                <button class="font-bold">Esqueci a senha</button>
-            </div>
-            <!-- btn para confirmar as infos -->
-            <input type="submit" value="Confirmar" id="confLogar">
+        <form autocomplete="on">
+    <!-- user ou email -->
+            <label for="user">Usuário ou Email:</label><br>
+            <input type="search" id="user" name="user"><br>
+    <!-- senha e recuperar senha -->
+            <label for="senhaLogar">Senha:</label><br>
+            <input type="password" id="senhaLogar" name="senhaLogar" class="mb-[0px]"><br>
+            <button class="font-bold mb-[22px]">Esqueci a senha</button><br>
+    <!-- btn para confirmar as infos -->
+            <input type="submit" value="Confirmar" id="confLogar" class="mt-[60px]">
         </form>
-            <!-- criar conta -->
+<!-- criar conta -->
         <p class="text-sm text-(--light-gray) mt-[48px]">Não tem uma conta?
-        <button class="text-white text-bold ml-[9px]">Inscreva-se</button></p>
-            <!-- line-OU -->
-        <div class="relative mb-[20px] mt-[19px]"> 
+            <button class="text-white text-bold ml-[9px]">Inscreva-se</button>
+        </p>
+<!-- line-OU -->
+        <div class="relative mb-[20px] mt-[19px]">
             <hr>
-            <span class="absolute w-[50px] top-[-12.5px] left-[50%] -translate-x-1/2 bg-(--bg-fundo) text-s text-(--gray-lines) text-center">ou</span>
+            <span
+                class="absolute w-[50px] top-[-12.5px] left-[50%] -translate-x-1/2 bg-(--bg-fundo) text-s text-(--gray-lines) text-center">ou</span>
         </div>
     </section>
 
@@ -55,30 +53,29 @@
     ----------------------------->
     <section>
         <form>
-            <!-- Nome de usuario -->
-            <div>
-                <label for="username">Nome de Usúario:</label><br>
-                <input type="text" name="username">
+    <!-- Nome de usuario -->
+            <label for="username">Nome de Usúario:</label><br>
+            <input type="text" name="username"><br>
+    <!-- email -->
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br>
+    <!-- senha -->
+            <label for="new-password">Senha:</label><br>
+            <input type="password" name="new-password"><br>
+    <!-- confirmar senha -->
+            <label for="conf-new-password">Confirme a senha:</label><br>
+            <input type="password" name="conf-new-password"><br>
+    <!-- checkbox para diretos -->
+            <div class="mt-[66px] mb-[29px] flex items-center">
+                <input type="checkbox" class="size-[1.25rem]" name="li&concordo" required>
+                <label for="li&concordo" class="text-[0.56rem] ml-[7px] text-(--light-gray)">Li e concordo com os 
+                    <a href="[termos]" class="text-white">termos de serviços</a> e <a href="[politicas]" class="text-white">políticas de privacidade</a></label>
             </div>
-            <!-- email -->
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" name="email">
-            </div>
-            <!-- senha -->
-            <div>
-                <label for="new-password">Senha:</label><br>
-                <input type="password" name="new-password">
-            </div>
-            <!-- confirmar senha -->
-            <div>
-                <label for="conf-new-password">Confirme a senha:</label><br>
-                <input type="password" name="conf-new-password">
-            </div>
-            <!-- btn para cria conta -->
-             <input type="submit" value="Confirmar" id="criaconta">
+    <!-- btn para cria conta -->
+            <input type="submit" value="Confirmar" id="criaconta"><br>
         </form>
     </section>
     <script src="JS/login.js"></script>
 </body>
+
 </html>

@@ -13,11 +13,11 @@ section {
     align-items: center;
 }
 
-form div {
+input:not([name="senhaLogar"]):not([type="checkbox"]) {
     margin-bottom: 22px;
 }
 
-input {
+input:not([type="checkbox"]) {
     border-radius: 5px;
     background-color: var(--bg-fundo);
     width: 427.05px;
@@ -29,10 +29,9 @@ input[type="submit"] {
 /*min-h-[54.95px] text-xl mt-[60px] */
     min-height: 54.95px;
     font-size: 1.25rem;
-    margin-top: 60px;
 }
 
-label {
+label:not([for="li&concordo"]) {
     margin: 0.37rem 0px;
 }
 
