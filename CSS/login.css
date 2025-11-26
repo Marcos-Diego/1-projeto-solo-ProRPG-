@@ -2,6 +2,8 @@
     --bg-fundo: #343A40;
     --light-gray: #C8C8C8;
     --gray-lines: #495057;
+    --white: #fff;
+    --green: #25a244;
 }
 
 section {
@@ -13,8 +15,14 @@ section {
     align-items: center;
 }
 
-input:not([name="senhaLogar"]):not([type="checkbox"]) {
-    margin-bottom: 22px;
+section:not(:first-child) {
+    margin-bottom: 78px;
+}
+
+hr {
+    width: 34.81rem;
+    border-top-width: 2px;
+    border-color: var(--gray-lines);
 }
 
 input:not([type="checkbox"]) {
@@ -22,21 +30,36 @@ input:not([type="checkbox"]) {
     background-color: var(--bg-fundo);
     width: 427.05px;
     height: 25px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
 }
 
 input[type="submit"] {
 /*min-h-[54.95px] text-xl mt-[60px] */
     min-height: 54.95px;
     font-size: 1.25rem;
+    line-height: calc(1.75 / 1.125);
 }
+
+input:not([name="senhaLogar"]):not([type="checkbox"]) {
+    margin-bottom: 22px;
+}
+
 
 label:not([for="li&concordo"]) {
     margin: 0.37rem 0px;
 }
 
-hr {
-    width: 34.81rem;
-    border-top-width: 2px;
-    border-color: var(--gray-lines);
+/* o p - o subtitulo */
+p:not(.text-xl) {
+    /* "text-sm text-(--light-gray) mt-[48px]" */
+    font-size: 0.875rem;
+    line-height: calc(1.25 / 0.875);
+    color: var(--light-gray);
+}
+
+/* butões - o inscreva-se */
+button {
+    /* text-white text-bold */
+    color: var(--white);
+    font-weight: 700;
 }
