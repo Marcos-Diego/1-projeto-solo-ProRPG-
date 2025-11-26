@@ -16,7 +16,7 @@
 
 <body class="bg-[#212529] font-[Inria_Sans] text-white flex flex-col items-center">
     <section class="mt-[78px]">
-        <img src="[img logo]" class="size-[90px]" alt="logo">
+        <!-- <img src="[img logo]" class="size-[90px] cursor-pointer" alt="logo"> -->
         <h1 class="text-4xl mb-[10px]">ProRpg</h1>
         <p class="text-xl mb-[26px]">Transformando Histórias em <strong>MUNDOS!</strong></p>
         <hr class="mb-[35px]">
@@ -24,7 +24,7 @@
     <!---------------------------
                 Logar
     ----------------------------->
-    <section id="Logar">
+    <section id="logar">
         <form autocomplete="on">
     <!-- user ou email -->
             <label for="user">Usuário ou Email:</label><br>
@@ -46,8 +46,13 @@
             <span
                 class="absolute w-[50px] top-[-12.5px] left-[50%] -translate-x-1/2 bg-(--bg-fundo) text-s text-(--gray-lines) text-center">ou</span>
         </div>
-    </section>
 
+<!--------------------------------------------------------
+    depois de logar com outra conta colocar mb-[75px]
+--------------------------------------------------------->
+
+        
+    </section>
     <!---------------------------
              Criar conta
     ----------------------------->
@@ -67,9 +72,9 @@
             <input type="password" name="conf-new-password"><br>
     <!-- checkbox para diretos -->
             <div class="mt-[66px] mb-[29px] flex items-center">
-                <input type="checkbox" class="size-[1.25rem]" name="li&concordo" required>
+                <input type="checkbox" class="cursor-pointer size-[1.25rem] border-1 rounded-sm accent-(--green) bg-transparent" name="li&concordo" required>
                 <label for="li&concordo" class="text-[0.56rem] ml-[7px] text-(--light-gray)">Li e concordo com os 
-                    <a href="[termos]" class="text-white">termos de serviços</a> e <a href="[politicas]" class="text-white">políticas de privacidade</a></label>
+                    <!-- <a href="[termos]" class="text-white">termos de serviços</a> e <a href="[politicas]" class="text-white">políticas de privacidade</a></label> -->
             </div>
     <!-- btn para cria conta -->
             <input type="submit" value="Confirmar" id="criaconta"><br>
@@ -80,5 +85,4 @@
     </section>
     <script src="JS/login.js"></script>
 </body>
-
 </html>
