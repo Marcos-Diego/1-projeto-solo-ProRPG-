@@ -38,7 +38,7 @@
         </form>
 <!-- Inscreva-se -->
         <p class="mt-[48px]">Não tem uma conta?
-            <button class="ml-[9px]">Inscreva-se</button>
+            <button class="ml-[9px]" onclick="aparecer('criar')">Inscreva-se</button>
         </p>
 <!-- line-OU -->
         <div class="relative mb-[20px] mt-[19px]">
@@ -56,7 +56,7 @@
     <!---------------------------
              Criar conta
     ----------------------------->
-    <section id="criar">
+    <section id="criar" style="display: none;">
         <form>
     <!-- Nome de usuario -->
             <label for="username">Nome de Usúario:</label><br>
@@ -81,7 +81,7 @@
         </form>
 <!-- Já tem uma conta? -->
         <p class="mt-[86px] mb-[75px]">Já tem uma conta?
-            <button class="ml-[9px]">Entre aqui!</button>
+            <button class="ml-[9px]" onclick="aparecer('logar')">Entre aqui!</button>
     </section>
     <script src="JS/login.js"></script>
 </body>

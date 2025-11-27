@@ -1,17 +1,20 @@
 // sections
 const criar = document.getElementById("criar");
 const logar = document.getElementById("logar");
-// butoes
-const butoes = document.querySelectorAll("button");
-for (let x = 0; x < butoes.length; x++) {
 
-    let text_x = butoes[x].textContent;
-    switch (text_x) {
-        case "Esqueci a senha":
-            const esqueci = butoes[x];
-        case "Inscreva-se":
-            const inscreva = butoes[x];
-        case "Entre aqui!":
-            const tenho = butoes[x];
+criar.style.display = 'none';
+
+function aparecer(any) {
+
+    switch (any) {
+        case 'criar':
+            logar.style.display = 'none';
+            criar.style.display = 'inline-flex';
+            break
+        case 'logar':
+            logar.style.display = 'inline-flex';
+            criar.style.display = 'none';
+            break
     }
+
 }
